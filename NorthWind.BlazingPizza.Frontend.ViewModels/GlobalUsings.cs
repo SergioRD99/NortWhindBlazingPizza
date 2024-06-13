@@ -1,0 +1,9 @@
+global using Microsoft.Extensions.DependencyInjection;
+global using NorthWind.BlazingPizza.Frontend.ViewModels.GetSpecials;
+global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System.Threading.Tasks;
+global using NorthWind.BlazingPizza.Entities.Dtos.GetSpecials;
+global using NorthWind.BlazingPizza.Frontend.BusinessObjects.Interfaces.GetSpecials;
