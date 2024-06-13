@@ -11,7 +11,7 @@ using NorthWind.BlazingPizza.DBAdmin.DataContexts;
 namespace NorthWind.BlazingPizza.DBAdmin.Migrations
 {
     [DbContext(typeof(BlazingPizzaContext))]
-    [Migration("20240613042024_InitialCreate")]
+    [Migration("20240613230214_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace NorthWind.BlazingPizza.DBAdmin.DataContexts
 {
@@ -13,8 +14,9 @@ namespace NorthWind.BlazingPizza.DBAdmin.DataContexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                "Server=(localdb)\\mssqllocaldb;Database=BlazingPizza");
-
+                "Server=tcp:lgfm.database.windows.net,1433;Initial Catalog=BlazingPizza;Persist Security Info=False;User ID=AdminLGF;Password=OrionRocky1975;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+          
+            
             base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
