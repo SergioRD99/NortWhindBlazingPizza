@@ -16,4 +16,10 @@
     <ProjectReference Include="..\NorthWind.BlazingPizza.Backend.IoC\NorthWind.BlazingPizza.Backend.IoC.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
