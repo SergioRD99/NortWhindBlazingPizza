@@ -28,5 +28,6 @@ namespace NorthWind.BlazingPizza.DBAdmin.DataContexts
         }
 
         public DbSet<PizzaSpecials> PizzaSpecials { get; set; }
+        public DbSet<Topping> Toppings { get; set; }
     }
 }

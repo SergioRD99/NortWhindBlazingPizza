@@ -12,6 +12,7 @@ namespace Microsoft.Extensions.DependencyInjection
         {
 
             services.AddScoped<IPizzaSpecialsDataSource, PizzaSpecialDataSource>();
+            services.AddScoped<IToppingDataSource, ToppingDataSource>();
 
             services.Configure(configureDBOption);
 

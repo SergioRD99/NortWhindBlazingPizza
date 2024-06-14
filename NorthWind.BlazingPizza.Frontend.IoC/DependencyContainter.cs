@@ -12,15 +12,21 @@ namespace NorthWind.BlazingPizza.Frontend.IoC
             this IServiceCollection services,
             Action<BlazingPizzaOptions> configureBlazingPizzaOptions)
         {
-            BlazingPizzaOptions blazingPizzaOptions = new();
-            configureBlazingPizzaOptions(blazingPizzaOptions);
+            BlazingPizzaOptions BlazingPizzaOptions = new();
+            configureBlazingPizzaOptions(BlazingPizzaOptions);
+
+
+
+            Uri WebApiUri = new Uri(BlazingPizzaOptions.WebApiBaseAddress);
             services.AddModels(
-                httpClient => httpClient.BaseAddress = 
-                    new Uri(blazingPizzaOptions.WebApiBaseAddress),
-                null);
+                httpClient => httpClient.BaseAddress = WebApiUri,
+                null,
+                httpCLient => httpCLient.BaseAddress = WebApiUri,
+                null
+                );
             services.AddViewModels();
 
-            services.AddSingleton(Options.Create(blazingPizzaOptions));
+            services.AddSingleton(Options.Create(BlazingPizzaOptions));
             return services;
         }
     }

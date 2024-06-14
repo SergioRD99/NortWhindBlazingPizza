@@ -1,4 +1,5 @@
 ﻿using NorthWind.BlazingPizza.Backend.Controllers.GetSpecials;
+using NorthWind.BlazingPizza.Backend.Controllers.GetToppings;
 
 namespace Microsoft.AspNetCore.Builder
 {
@@ -8,7 +9,7 @@ namespace Microsoft.AspNetCore.Builder
             this WebApplication app)
         {
             app.UseGetSpecialsController();
-
+            app.UseGetToppingsController();
             return app;
         }
     }

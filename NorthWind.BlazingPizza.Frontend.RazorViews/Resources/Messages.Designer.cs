@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NorthWind.BlazingPizza.Frontend.RazorViews.Sources {
+namespace NorthWind.BlazingPizza.Frontend.RazorViews.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace NorthWind.BlazingPizza.Frontend.RazorViews.Sources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NorthWind.BlazingPizza.Frontend.RazorViews.Sources.Messages", typeof(Messages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NorthWind.BlazingPizza.Frontend.RazorViews.Resources.Messages", typeof(Messages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,11 +61,74 @@ namespace NorthWind.BlazingPizza.Frontend.RazorViews.Sources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Complementos adicionales.
+        /// </summary>
+        internal static string AdditionalToppingsLabel {
+            get {
+                return ResourceManager.GetString("AdditionalToppingsLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Blazing Pizza.
         /// </summary>
         internal static string AppTitle {
             get {
                 return ResourceManager.GetString("AppTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cancelar.
+        /// </summary>
+        internal static string CancelButtonText {
+            get {
+                return ResourceManager.GetString("CancelButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Tamaño.
+        /// </summary>
+        internal static string CustomPizzaSizeLabel {
+            get {
+                return ResourceManager.GetString("CustomPizzaSizeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a maximo alcanzado.
+        /// </summary>
+        internal static string HasMaximumToppingsText {
+            get {
+                return ResourceManager.GetString("HasMaximumToppingsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cargando....
+        /// </summary>
+        internal static string LoadingText {
+            get {
+                return ResourceManager.GetString("LoadingText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ordenar.
+        /// </summary>
+        internal static string OrderButtonText {
+            get {
+                return ResourceManager.GetString("OrderButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Precio.
+        /// </summary>
+        internal static string PriceText {
+            get {
+                return ResourceManager.GetString("PriceText", resourceCulture);
             }
         }
         
@@ -84,6 +147,15 @@ namespace NorthWind.BlazingPizza.Frontend.RazorViews.Sources {
         internal static string ResourceNotFoundPageTitle {
             get {
                 return ResourceManager.GetString("ResourceNotFoundPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Selecciona.
+        /// </summary>
+        internal static string SelectToppingOptionText {
+            get {
+                return ResourceManager.GetString("SelectToppingOptionText", resourceCulture);
             }
         }
     }
