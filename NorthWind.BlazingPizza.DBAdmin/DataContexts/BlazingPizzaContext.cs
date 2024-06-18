@@ -1,11 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NorthWind.BlazingPizza.Backend.Repositories.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace NorthWind.BlazingPizza.DBAdmin.DataContexts
 {
@@ -14,7 +8,7 @@ namespace NorthWind.BlazingPizza.DBAdmin.DataContexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                "Server=tcp:lgfm.database.windows.net,1433;Initial Catalog=lgfm;Persist Security Info=False;User ID=AdminLGF;Password=OrionRocky1975;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+                "Server=(localdb)\\mssqllocaldb;Database=BlazingPizza;");
           
             
             base.OnConfiguring(optionsBuilder);
