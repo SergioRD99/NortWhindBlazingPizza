@@ -1,6 +1,7 @@
-﻿
-using System.Net.Http.Json;
+﻿using System.Net.Http.Json;
+using NorthWind.BlazingPizza.Entities.Dtos.GetSpecials;
 using NorthWind.BlazingPizza.Entities.ValueObject;
+using NorthWind.BlazingPizza.Frontend.BusinessObjects.Interfaces.GetSpecials;
 
 namespace NorthWind.BlazingPizza.Frontend.WebApiProxies.GetSpecials
 {

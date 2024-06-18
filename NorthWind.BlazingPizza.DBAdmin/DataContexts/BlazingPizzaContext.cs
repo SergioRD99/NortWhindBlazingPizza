@@ -14,7 +14,7 @@ namespace NorthWind.BlazingPizza.DBAdmin.DataContexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                "Server=tcp:lgfm.database.windows.net,1433;Initial Catalog=BlazingPizza;Persist Security Info=False;User ID=AdminLGF;Password=OrionRocky1975;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+                "Server=tcp:lgfm.database.windows.net,1433;Initial Catalog=lgfm;Persist Security Info=False;User ID=AdminLGF;Password=OrionRocky1975;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
           
             
             base.OnConfiguring(optionsBuilder);

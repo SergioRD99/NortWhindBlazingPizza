@@ -11,8 +11,8 @@ using NorthWind.BlazingPizza.DBAdmin.DataContexts;
 namespace NorthWind.BlazingPizza.DBAdmin.Migrations
 {
     [DbContext(typeof(BlazingPizzaContext))]
-    [Migration("20240614011843_AddToppings")]
-    partial class AddToppings
+    [Migration("20240617235845_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

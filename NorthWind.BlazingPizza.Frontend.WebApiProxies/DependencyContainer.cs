@@ -1,4 +1,5 @@
-﻿using NorthWind.BlazingPizza.Frontend.BusinessObjects.Interfaces.GetToppings;
+﻿using NorthWind.BlazingPizza.Frontend.BusinessObjects.Interfaces.GetSpecials;
+using NorthWind.BlazingPizza.Frontend.BusinessObjects.Interfaces.GetToppings;
 using NorthWind.BlazingPizza.Frontend.WebApiProxies.GetToppings;
 
 namespace NorthWind.BlazingPizza.Frontend.WebApiProxies
