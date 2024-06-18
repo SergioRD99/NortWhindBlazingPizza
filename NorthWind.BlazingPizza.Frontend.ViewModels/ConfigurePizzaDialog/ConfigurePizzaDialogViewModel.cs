@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace NorthWind.BlazingPizza.Frontend.ViewModels.ConfigurePizzaDialog
 {
-    internal class ConfigurePizzaDialogViewModel(
+    public class ConfigurePizzaDialogViewModel(
         IGetToppingsModel toppingsModel)
 
     {
         public IEnumerable<ToppingDto> Toppings { get; private set; }
 
-        public async Task GetToppings() =>
+        public async Task GetToppingsAsync() =>
             Toppings = await toppingsModel.GetToppingsAsync();
     }
 }

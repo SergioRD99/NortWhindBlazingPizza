@@ -1,0 +1,32 @@
+﻿@page "/test"
+@using Microsoft.Extensions.Options
+@using NorthWind.BlazingPizza.Frontend.BusinessObjects.Aggregates
+@using NorthWind.BlazingPizza.Frontend.BusinessObjects.Interfaces.GetToppings
+@using NorthWind.BlazingPizza.Frontend.BusinessObjects.Option
+@using NorthWind.BlazingPizza.Frontend.ViewModels.GetSpecials
+@inject IOptions<BlazingPizzaOptions> Options;
+@inject GetSpecialsViewModel ViewModel;
+@inject IGetToppingsModel ToppingsModel
+<h3>Test</h3>
+
+
+@if (Pizza != null)
+{
+    <ConfigurePizzaDialog CustomPizza="Pizza"></ConfigurePizzaDialog>
+}
+@code {
+
+    CustomPizza Pizza { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        await ViewModel.GetSpecialsAsync();
+        var Toppings = await ToppingsModel.GetToppingsAsync();
+        Pizza = new CustomPizza(
+            ViewModel.Specials.First(), Options.Value);
+
+        Pizza.AddToppings(Toppings.ElementAt(0));
+        Pizza.AddToppings(Toppings.ElementAt(1));
+        Pizza.AddToppings(Toppings.ElementAt(2));
+    }
+
+}

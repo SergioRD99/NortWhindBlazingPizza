@@ -61,7 +61,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.BlazingPizza.WebA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.BlazingPizza.Backend.Presenters", "NorthWind.BlazingPizza.Backend.Presenters\NorthWind.BlazingPizza.Backend.Presenters.csproj", "{9DEDB655-325D-491E-8539-20C1D1062A66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NortWhindBlazingPizza.BlazorClient", "NortWhindBlazingPizza.BlazorClient\NortWhindBlazingPizza.BlazorClient.csproj", "{23CF9A18-B37E-4D16-890A-2C8186B3B159}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NortWhindBlazingPizza.BlazorClient", "NortWhindBlazingPizza.BlazorClient\NortWhindBlazingPizza.BlazorClient.csproj", "{23CF9A18-B37E-4D16-890A-2C8186B3B159}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
