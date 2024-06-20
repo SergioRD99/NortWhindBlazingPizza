@@ -1,8 +1,10 @@
 ﻿@page "/"
 
 <PageTitle>@Messages.AppTitle</PageTitle>
-<Specials OnClickSpecial="ViewModel.ConfigurePizza" ></Specials>
+<Specials OnClickSpecial="ViewModel.ConfigurePizza"></Specials>
 
-
-
+@if (ViewModel.ShowConfigurePizzaDialog)
+{
+    <ConfigurePizzaDialog CustomPizza="ViewModel.CustomPizza"></ConfigurePizzaDialog>
+}
 

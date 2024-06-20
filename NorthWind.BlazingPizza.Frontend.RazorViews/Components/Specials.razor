@@ -4,8 +4,9 @@
         {
             foreach(var Special in viewModel.Specials)
             {
-                <li @onclick="@(()=> OnClickSpecial.InvokeAsync(Special))"></li>
-                <li style="background-image: url('@Special.ImageUrl')">
+                
+                <li @onclick="@(()=> OnClickSpecial.InvokeAsync(Special))"
+                    style="background-image: url('@Special.ImageUrl')">
                     <div class="pizza-info">    
                         <span class="title">
                             @Special.Name
