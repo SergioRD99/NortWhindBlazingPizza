@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using System.Transactions;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using NorthWind.BlazingPizza.Frontend.BusinessObjects.Option;
 using NorthWind.BlazingPizza.Frontend.ViewModels;
@@ -27,6 +28,8 @@ namespace NorthWind.BlazingPizza.Frontend.IoC
             services.AddViewModels();
 
             services.AddSingleton(Options.Create(BlazingPizzaOptions));
+
+            services.AddBusinessObjectServices();
             return services;
         }
     }

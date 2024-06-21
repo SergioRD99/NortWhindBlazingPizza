@@ -2,9 +2,12 @@
 
 <PageTitle>@Messages.AppTitle</PageTitle>
 <Specials OnClickSpecial="ViewModel.ConfigurePizza"></Specials>
+<OrderedPizzas ShoppingCart="ShoppingCart"></OrderedPizzas>
 
 @if (ViewModel.ShowConfigurePizzaDialog)
 {
-    <ConfigurePizzaDialog CustomPizza="ViewModel.CustomPizza"></ConfigurePizzaDialog>
+    <ConfigurePizzaDialog CustomPizza="ViewModel.CustomPizza"
+                          OnCancel="ViewModel.CancelConfigurePizza"
+                          OnConfirm="ViewModel.ConfirmConfigurePizza"></ConfigurePizzaDialog>
 }
 

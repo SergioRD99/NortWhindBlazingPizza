@@ -88,6 +88,15 @@ namespace NorthWind.BlazingPizza.Frontend.RazorViews.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Ordenar.
+        /// </summary>
+        internal static string CheckoutLinkText {
+            get {
+                return ResourceManager.GetString("CheckoutLinkText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Tamaño.
         /// </summary>
         internal static string CustomPizzaSizeLabel {
@@ -151,11 +160,38 @@ namespace NorthWind.BlazingPizza.Frontend.RazorViews.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Seleccione una pizza para empezar.
+        /// </summary>
+        internal static string SelectPizzaText {
+            get {
+                return ResourceManager.GetString("SelectPizzaText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Selecciona.
         /// </summary>
         internal static string SelectToppingOptionText {
             get {
                 return ResourceManager.GetString("SelectToppingOptionText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Total.
+        /// </summary>
+        internal static string TotalText {
+            get {
+                return ResourceManager.GetString("TotalText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Tu Pedido.
+        /// </summary>
+        internal static string YourOrderText {
+            get {
+                return ResourceManager.GetString("YourOrderText", resourceCulture);
             }
         }
     }

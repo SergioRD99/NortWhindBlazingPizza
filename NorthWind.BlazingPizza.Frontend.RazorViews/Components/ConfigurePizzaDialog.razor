@@ -10,7 +10,9 @@
                 <input type="range"
                        min="@Options.Value.MinimumPizzaSize"
                        max="@Options.Value.MaximumPizzaSize"
-                       step="@Options.Value.SizeIncrement" />
+                       step="@Options.Value.SizeIncrement" 
+                       @bind=CustomPizza.Size
+                       @bind:event="oninput"/>
                 <span class="size-label">
                     @CustomPizza.GetFormattedSizeWithTotalPrice()
                 </span>
@@ -29,7 +31,8 @@
                 }
                 else
                 {
-                    <select class="form-select">
+                    <select class="form-select"
+                    @onchange="ToppingSelected">
                         <option value="-1" disabled selected>
                             (@Messages.SelectToppingOptionText)
                         </option>
@@ -50,7 +53,8 @@
                         <span class="topping-price">
                             @Topping.GetFormattedPrice()
                         </span>
-                        <button type="button" class="delete-topping">
+                        <button type="button" class="delete-topping"
+                        @onclick=@(()=> CustomPizza.RemoveTopping(Topping))>
                             x
                         </button>
                     </div>

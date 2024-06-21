@@ -1,10 +1,12 @@
 ﻿using Microsoft.Extensions.Options;
 using NorthWind.BlazingPizza.Frontend.BusinessObjects.Aggregates;
 using NorthWind.BlazingPizza.Frontend.BusinessObjects.Option;
+using NorthWind.BlazingPizza.Frontend.BusinessObjects.Services;
 
 namespace NorthWind.BlazingPizza.Frontend.ViewModels.Index
 {
-    public class IndexViewModel(IOptions<BlazingPizzaOptions> options)
+    public class IndexViewModel(IOptions<BlazingPizzaOptions> options,
+        ShoppingCart shoppingCart)
     {
         public CustomPizza CustomPizza { get; set; }
         public bool ShowConfigurePizzaDialog { get; set; }
@@ -23,6 +25,12 @@ namespace NorthWind.BlazingPizza.Frontend.ViewModels.Index
 
         public void ConfirmConfigurePizza()
         {
+            shoppingCart.AddPizza(CustomPizza);
+            foreach (var Pizza in shoppingCart.Pizzas)
+            {
+                Console.WriteLine(Pizza.Special.Name);
+            }
+            
             CustomPizza = null;
             ShowConfigurePizzaDialog = false;
         }
