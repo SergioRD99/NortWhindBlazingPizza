@@ -88,11 +88,20 @@ namespace NorthWind.BlazingPizza.Frontend.RazorViews.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Ordenar.
+        ///   Busca una cadena traducida similar a Ordenar &gt;.
         /// </summary>
         internal static string CheckoutLinkText {
             get {
                 return ResourceManager.GetString("CheckoutLinkText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Elegir pizza.
+        /// </summary>
+        internal static string ChoosePizzaLinkText {
+            get {
+                return ResourceManager.GetString("ChoosePizzaLinkText", resourceCulture);
             }
         }
         
@@ -133,6 +142,15 @@ namespace NorthWind.BlazingPizza.Frontend.RazorViews.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Realizar pedido.
+        /// </summary>
+        internal static string PlaceOrderButtonText {
+            get {
+                return ResourceManager.GetString("PlaceOrderButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Precio.
         /// </summary>
         internal static string PriceText {
@@ -160,6 +178,15 @@ namespace NorthWind.BlazingPizza.Frontend.RazorViews.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Revisar la orden.
+        /// </summary>
+        internal static string ReviewOrderText {
+            get {
+                return ResourceManager.GetString("ReviewOrderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Seleccione una pizza para empezar.
         /// </summary>
         internal static string SelectPizzaText {
@@ -174,6 +201,15 @@ namespace NorthWind.BlazingPizza.Frontend.RazorViews.Resources {
         internal static string SelectToppingOptionText {
             get {
                 return ResourceManager.GetString("SelectToppingOptionText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Precio total:.
+        /// </summary>
+        internal static string TotalPriceText {
+            get {
+                return ResourceManager.GetString("TotalPriceText", resourceCulture);
             }
         }
         
