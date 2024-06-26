@@ -1,5 +1,7 @@
-﻿using NorthWind.BlazingPizza.Frontend.BusinessObjects.Interfaces.GetSpecials;
+﻿using Microsoft.Extensions.DependencyInjection.Interfaces.Checkout;
+using NorthWind.BlazingPizza.Frontend.BusinessObjects.Interfaces.GetSpecials;
 using NorthWind.BlazingPizza.Frontend.BusinessObjects.Interfaces.GetToppings;
+using NorthWind.BlazingPizza.Frontend.WebApiProxies.Checkout;
 using NorthWind.BlazingPizza.Frontend.WebApiProxies.GetToppings;
 
 namespace NorthWind.BlazingPizza.Frontend.WebApiProxies
@@ -27,6 +29,8 @@ namespace NorthWind.BlazingPizza.Frontend.WebApiProxies
                     GetToppingsModel>(configureGetToppingsModelHttpClient);
 
             getToppingsHttpClientBuilder?.Invoke(GetToppingsBuilder);
+
+            services.AddScoped<ICheckoutModel, CheckoutModel>();
             return services;
         }
     }

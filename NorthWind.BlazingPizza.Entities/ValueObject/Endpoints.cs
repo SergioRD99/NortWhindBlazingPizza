@@ -4,5 +4,6 @@
     {
         public const string GetSpecials = $"/{nameof(GetSpecials)}";
         public const string GetToppings = $"/{nameof(GetToppings)}";
+        public const string PlaceOrder = $"/{nameof(PlaceOrder)}";
     }
 }

@@ -2,7 +2,7 @@
 
 namespace NorthWind.BlazingPizza.Backend.Controllers.GetToppings
 {
-    public static class GetToppingsController
+    internal static class GetToppingsController
     {
         public static WebApplication UseGetToppingsController(
             this WebApplication app)

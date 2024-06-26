@@ -1,4 +1,5 @@
 ﻿using NorthWind.BlazingPizza.Backend.BusinessObject.Interfaces.GetToppings;
+using NorthWind.BlazingPizza.Backend.BusinessObject.Interfaces.PlaceOrder;
 
 namespace NorthWind.BlazingPizza.Backend.Repositories
 {
@@ -10,6 +11,8 @@ namespace NorthWind.BlazingPizza.Backend.Repositories
             services.AddScoped<IGetSpecialsRepository, GetSpecialsRepository>();
 
             services.AddScoped<IGetToppingsRepository, GetToppingsRepository>();
+
+            services.AddScoped<IPlaceOrderRepository, PlaceOrderRepository>();
 
             return services;
         }
