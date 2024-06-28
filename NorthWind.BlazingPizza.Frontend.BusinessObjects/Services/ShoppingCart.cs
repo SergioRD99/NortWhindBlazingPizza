@@ -1,4 +1,5 @@
-﻿using NorthWind.BlazingPizza.Frontend.BusinessObjects.Aggregates;
+﻿using NorthWind.BlazingPizza.Entities.Dtos.PlaceOrder;
+using NorthWind.BlazingPizza.Frontend.BusinessObjects.Aggregates;
 
 namespace NorthWind.BlazingPizza.Frontend.BusinessObjects.Services
 {
@@ -26,5 +27,10 @@ namespace NorthWind.BlazingPizza.Frontend.BusinessObjects.Services
              GetTotalPrice().ToString("0.00");
 
          public bool HasPizzas => PizzaField.Any();
+
+         public static explicit operator PlaceOrderOrderDto(ShoppingCart shoppingCart) =>
+             new PlaceOrderOrderDto(
+                 shoppingCart.Pizzas.Select(p => (PlaceOrderPizzaDto)p)
+             );
     }
 }

@@ -13,4 +13,8 @@
     <ProjectReference Include="..\NorthWind.BlazingPizza.Backend.BusinessObject\NorthWind.BlazingPizza.Backend.BusinessObject.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="GetOrders\" />
+  </ItemGroup>
+
 </Project>

@@ -1,18 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net.Http.Json;
 using Microsoft.Extensions.DependencyInjection.Interfaces.Checkout;
+using NorthWind.BlazingPizza.Entities.Dtos.PlaceOrder;
+using NorthWind.BlazingPizza.Entities.ValueObject;
 using NorthWind.BlazingPizza.Frontend.BusinessObjects.Services;
 
 namespace NorthWind.BlazingPizza.Frontend.WebApiProxies.Checkout
 {
-    internal class CheckoutModel : ICheckoutModel
+    internal class CheckoutModel(HttpClient client) : ICheckoutModel
     {
         public async Task<int> PlaceOrderAsync(ShoppingCart orden)
         {
-            return await Task.FromResult(0);
+            int OrderId = 0;
+            var Response = await client.PostAsJsonAsync(Endpoints.PlaceOrder,
+                (PlaceOrderOrderDto)orden);
+            if (Response.IsSuccessStatusCode)
+            {
+                OrderId = await Response.Content.ReadFromJsonAsync<int>();
+            }
+
+            return OrderId;
         }
     }
 }
