@@ -14,6 +14,7 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddScoped<IPizzaSpecialsDataSource, PizzaSpecialDataSource>();
             services.AddScoped<IToppingDataSource, ToppingDataSource>();
             services.AddScoped<IplaceOrderDataSource, PlaceOrderDataSource>();
+            services.AddScoped<IOrdersDataSource, OrderDataSource>();
 
             services.Configure(configureDBOption);
 

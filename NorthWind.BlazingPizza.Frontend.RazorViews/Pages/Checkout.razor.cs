@@ -13,7 +13,7 @@ namespace NorthWind.BlazingPizza.Frontend.RazorViews.Pages
         async Task PlacerOrder()
         {
             await viewModel.PlaceOrderAsync();
-            navigationManager.NavigateTo("/");
+            navigationManager.NavigateTo("orders");
         }
     }
 }

@@ -117,79 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AdditionalToppingsLabel" xml:space="preserve">
-    <value>Complementos adicionales</value>
+  <data name="DeliveredText" xml:space="preserve">
+    <value>Entregado</value>
   </data>
-  <data name="AppTitle" xml:space="preserve">
-    <value>Blazing Pizza</value>
+  <data name="OutForDeliveryText" xml:space="preserve">
+    <value>En camino</value>
   </data>
-  <data name="CancelButtonText" xml:space="preserve">
-    <value>Cancelar</value>
+  <data name="PreparingText" xml:space="preserve">
+    <value>Preparando</value>
   </data>
-  <data name="CheckoutLinkText" xml:space="preserve">
-    <value>Ordenar &gt;</value>
-  </data>
-  <data name="ChoosePizzaLinkText" xml:space="preserve">
-    <value>Elegir pizza</value>
-  </data>
-  <data name="CustomPizzaSizeLabel" xml:space="preserve">
-    <value>Tamaño</value>
-  </data>
-  <data name="EmptyOrdersText" xml:space="preserve">
-    <value>No se a realizado alguna orden </value>
-  </data>
-  <data name="HasMaximumToppingsText" xml:space="preserve">
-    <value>maximo alcanzado</value>
-  </data>
-  <data name="LoadingText" xml:space="preserve">
-    <value>Cargando...</value>
-  </data>
-  <data name="MyOrdersText" xml:space="preserve">
-    <value>Mis ordenes</value>
-  </data>
-  <data name="OrdenAnyPizzaText" xml:space="preserve">
-    <value>Ordena alguna pizza</value>
-  </data>
-  <data name="OrderButtonText" xml:space="preserve">
-    <value>Ordenar</value>
-  </data>
-  <data name="PizzasText" xml:space="preserve">
-    <value>Pizzas:</value>
-  </data>
-  <data name="PlaceOrderButtonText" xml:space="preserve">
-    <value>Realizar pedido</value>
-  </data>
-  <data name="PriceText" xml:space="preserve">
-    <value>Precio</value>
-  </data>
-  <data name="ResourceNotFoundErrorMessage" xml:space="preserve">
-    <value>Lo lamentamos, no existe nada en esta dirección.</value>
-  </data>
-  <data name="ResourceNotFoundPageTitle" xml:space="preserve">
-    <value>Recurso no encontrado</value>
-  </data>
-  <data name="ReviewOrderText" xml:space="preserve">
-    <value>Revisar la orden</value>
-  </data>
-  <data name="SelectPizzaText" xml:space="preserve">
-    <value>Seleccione una pizza para empezar</value>
-  </data>
-  <data name="SelectToppingOptionText" xml:space="preserve">
-    <value>Selecciona</value>
-  </data>
-  <data name="StatusText" xml:space="preserve">
-    <value>Estado:</value>
-  </data>
-  <data name="TotalPriceText" xml:space="preserve">
-    <value>Precio total:</value>
-  </data>
-  <data name="TotalText" xml:space="preserve">
-    <value>Total</value>
-  </data>
-  <data name="TrackText" xml:space="preserve">
-    <value>Rastrear &gt;</value>
-  </data>
-  <data name="YourOrderText" xml:space="preserve">
-    <value>Tu Pedido</value>
+  <data name="UnknownStatusText" xml:space="preserve">
+    <value>Desconocido</value>
   </data>
 </root>
