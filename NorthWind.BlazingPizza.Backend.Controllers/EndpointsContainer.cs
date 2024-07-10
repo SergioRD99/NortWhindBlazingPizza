@@ -1,4 +1,5 @@
-﻿using NorthWind.BlazingPizza.Backend.Controllers.GetOrders;
+﻿using NorthWind.BlazingPizza.Backend.Controllers.GetOrder;
+using NorthWind.BlazingPizza.Backend.Controllers.GetOrders;
 using NorthWind.BlazingPizza.Backend.Controllers.GetSpecials;
 using NorthWind.BlazingPizza.Backend.Controllers.GetToppings;
 using NorthWind.BlazingPizza.Backend.Controllers.PlaceOrder;
@@ -14,6 +15,7 @@ namespace Microsoft.AspNetCore.Builder
             app.UseGetToppingsController();
             app.UsePlaceOrderController();
             app.UsegetOrdersControllers();
+            app.UseGetOrderController();
 
             return app;
         }

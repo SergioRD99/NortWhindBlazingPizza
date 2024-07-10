@@ -15,6 +15,7 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddScoped<IToppingDataSource, ToppingDataSource>();
             services.AddScoped<IplaceOrderDataSource, PlaceOrderDataSource>();
             services.AddScoped<IOrdersDataSource, OrderDataSource>();
+            services.AddScoped<IGetOrderDataSource, GetOrderDataSourceSQL>();
 
             services.Configure(configureDBOption);
 

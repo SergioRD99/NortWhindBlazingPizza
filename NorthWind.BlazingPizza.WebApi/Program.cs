@@ -34,12 +34,15 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseCors();
 }
 
 app.UseHttpsRedirection();
 
+
 app.UseBlazingPizzaEndpoints();
 app.UseCors();
+
 
 
 app.Run();

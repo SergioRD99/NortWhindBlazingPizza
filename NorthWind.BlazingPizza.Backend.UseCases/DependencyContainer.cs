@@ -1,6 +1,8 @@
-﻿using NorthWind.BlazingPizza.Backend.BusinessObject.Interfaces.GetOrders;
+﻿using NorthWind.BlazingPizza.Backend.BusinessObject.Interfaces.GetOrder;
+using NorthWind.BlazingPizza.Backend.BusinessObject.Interfaces.GetOrders;
 using NorthWind.BlazingPizza.Backend.BusinessObject.Interfaces.GetToppings;
 using NorthWind.BlazingPizza.Backend.BusinessObject.Interfaces.PlaceOrder;
+using NorthWind.BlazingPizza.Backend.UseCases.GetOrder;
 using NorthWind.BlazingPizza.Backend.UseCases.GetOrders;
 using NorthWind.BlazingPizza.Backend.UseCases.GetToppings;
 using NorthWind.BlazingPizza.Backend.UseCases.PlaceOrder;
@@ -19,8 +21,10 @@ namespace NorthWind.BlazingPizza.Backend.UseCases
 
             services.AddScoped<IGetOrdersInputPort, GetOrdersInteractor>();
 
+            services.AddScoped<IGetOrderInputPort, GetOrderInteractor>();
+
             return services;
         }
-        
+
     }
 }
