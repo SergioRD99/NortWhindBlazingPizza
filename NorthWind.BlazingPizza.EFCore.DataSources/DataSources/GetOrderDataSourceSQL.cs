@@ -11,7 +11,7 @@ using System.Diagnostics;
 namespace NorthWind.BlazingPizza.EFCore.DataSources.DataSources
 {
     internal class GetOrderDataSourceSQL(IOptions<DBOptions> options) :
-        DbContext, IGetOrderDataSource
+        DbContext, IGetOrderDataSource, IDisposable
     {
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
